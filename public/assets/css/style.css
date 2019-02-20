@@ -7,7 +7,9 @@
 }
 
 .jumbotron > h1 {
-    font-family: 'Bungee Shade', cursive;
+    /* font-family: 'Bungee Shade', cursive; */
+    font-family: 'Bobs Burgers';
+    color: black;
 }
 
 #newburger {
