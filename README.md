@@ -2,8 +2,11 @@
 <img src="https://github.com/ChereeNielson/Bobs-Burgers/blob/master/public/assets/images/BobsBurgersLogo.png?raw=true" alt="Project logo"></img>
 </div>
 
-# Bob's Burgers!
-A Bob's Burger Inspired Application With *Node/Express/MySQL/Handlebars*
+<div align="center">
+<img src="https://github.com/ChereeNielson/Bobs-Burgers/blob/master/public/assets/images/silhouette.png?raw=true" alt="Project logo"></img>
+</div>
+
+# Let's Make This Kitty Purr...
 
 ## Description
 
@@ -62,6 +65,7 @@ node server.js
 * VS Code - [https://code.visualstudio.com/](https://code.visualstudio.com/)
 * Git Tools - [https://git-scm.com/download](https://git-scm.com/download)
 * Live Markdown Editor - [https://jbt.github.io/markdown-editor/](https://jbt.github.io/markdown-editor/)
+* Online Markdown Editor - [https://dillinger.io/](https://dillinger.io/)
 
 ## Author
 
