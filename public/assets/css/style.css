@@ -6,9 +6,8 @@
     margin-top: 10px;
 }
 
-.jumbotron > h1 {
-    /* font-family: 'Bungee Shade', cursive; */
-    font-family: 'Bobs Burgers';
+.jumbotron > h1, h2 {
+    font-family: 'Bungee Shade', cursive;
     color: black;
 }
 
@@ -21,7 +20,7 @@
 }
 
 #lefthead {
-    background-color: #5cb85c;
+    background-color: #1E90FF;
     color: white;
     text-align: center;
     font-size: 1.2em;
