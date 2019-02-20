@@ -14,8 +14,8 @@ The user may enter any burger name to add it to the menu. This also adds the new
 ## Application Heroku Link
 The link below will give you direct access to Eat-Da-Burger web application using your web browser via the Heroku web service. (NOTE: There will be a momentary delay when first accessing the Heroku servers.)
 
-<!-- Heroku References: https://evening-ridge-94356.herokuapp.com/ | https://git.heroku.com/evening-ridge-94356.git -->
-<!-- * [Bobs-Burgers](https://uncbc-eatdaburger.herokuapp.com/) -->
+<!-- Heroku References: https://limitless-ridge-53757.herokuapp.com/ | https://git.heroku.com/limitless-ridge-53757.git -->
+* [Bobs-Burgers](https://limitless-ridge-53757.herokuapp.com/)
 
 ![hw-13-logo](https://media0.giphy.com/media/13PryZsJYgjPFu/giphy.gif)
 
