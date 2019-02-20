@@ -6,7 +6,7 @@
     margin-top: 10px;
 }
 
-.jumbotron > h1, h2 {
+.jumbotron > h1 {
     font-family: 'Bungee Shade', cursive;
     color: black;
 }
@@ -16,14 +16,14 @@
 }
 
 #color-override {
-    color: #fff;
+    color: black;
 }
 
 #lefthead {
     background-color: #1E90FF;
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 #eatbutton, #trashbutton {
@@ -34,5 +34,5 @@
     background-color: #f0ad4e;
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2em;
 }
