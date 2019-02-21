@@ -18,14 +18,14 @@ router.get("/", function(req, res) {
     });
 });
 // Add New Burger to the DB //
-router.post("/api/burgers", function(req, res) {
+router.post("/burgers", function(req, res) {
     burger.insertOne(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
         // Send back the ID of the New Burger //
         res.json({ id: result.insertId });
      });
 });
 // Set Burger Devoured Status to True //
-router.put("/api/burgers/:id", function(req, res) {
+router.put("/burgers/:id", function(req, res) {
     let condition = "id = " + req.params.id;
 
     burger.updateOne({
@@ -45,7 +45,7 @@ router.put("/api/burgers/:id", function(req, res) {
 //     });
 // });
 // Delete Burger from DB //
-router.delete("/api/burgers/:id", function(req, res) {
+router.delete("/burgers/:id", function(req, res) {
     let condition = "id = " + req.params.id;
 
     burger.deleteOne(condition, function(result) {
