@@ -22,18 +22,20 @@ function objToSql(ob) {
 
 // Object for all SQL statement functions //
 let orm = {
-    all: function(tableInput, cb) {
-        let queryString = "SELECT * FROM " + tableInput + ";";
+    // Display all Burger in the DB //
+    selectAll: function(table, cb) {
+        let queryString = "SELECT * FROM " + table + ";";
         connection.query(queryString, function(err, result) {
             if(err) throw err;
             cb(result);
         });
     },
-    update: function(tableInput, columnInput, condition, cb) {
+    // Set Burger Devoured Status to True //
+    updateOne: function(table, objColVals, condition, cb) {
         let queryString = "UPDATE " + table;
 
         queryString += " SET ";
-        queryString += objToSql(columnInput);
+        queryString += objToSql(objColVals);
         queryString += " WHERE ";
         queryString += condition;
 
@@ -43,7 +45,8 @@ let orm = {
             cb(result);
         });
     },
-    create: function(table, cols, val, cb) {
+    // Add a Burger to the DB //
+    insertOne: function(table, cols, vals, cb) {
         let queryString = "INSERT INTO " + table;
 
         queryString += " (";
@@ -58,7 +61,8 @@ let orm = {
             cb(result);
         });
     },
-    delete: function(table, condition, cb) {
+    // Delete a Burger from the DB //
+    deleteOne: function(table, condition, cb) {
         let queryString = "DELETE FROM " + table;
 
         queryString += " WHERE ";
