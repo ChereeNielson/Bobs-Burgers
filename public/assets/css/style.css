@@ -7,7 +7,10 @@
 }
 
 .jumbotron > h1 {
-    font-family: 'Bungee Shade', cursive;
+    /* font-family: 'Bungee Shade', cursive; */
+    font-family: 'Seymour One', sans-serif;
+    /* font-family: 'Nosifer', cursive; */
+    /* font-family: 'Slackey', cursive; */
     color: black;
 }
 
