@@ -75,5 +75,5 @@ let orm = {
     }
 };
 
-// Export the ORM object for the model //
+// Export the ORM Object for the Model //
 module.exports = orm;
