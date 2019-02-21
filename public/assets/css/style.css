@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url("/assets/images/BobsBurgers.jpg");
+    background-image: url("/assets/images/BobsBurgers.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8,9 +8,10 @@
 
 .jumbotron > h1 {
     /* font-family: 'Bungee Shade', cursive; */
-    font-family: 'Seymour One', sans-serif;
-    /* font-family: 'Nosifer', cursive; */
+    /* font-family: 'Seymour One', sans-serif; */
+    font-family: 'Nosifer', cursive;
     /* font-family: 'Slackey', cursive; */
+    /* font-family: 'Notable', sans-serif; */
     color: black;
 }
 
