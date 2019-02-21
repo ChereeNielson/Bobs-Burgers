@@ -4,7 +4,7 @@
 // ==============================================================================
 let express = require("express");
 let bodyParser = require("body-parser");
-let methodOverride = require("method-override");
+// let methodOverride = require("method-override");
 
 // ================================================================================
 // EXPRESS CONFIGURATION
@@ -16,10 +16,10 @@ let app = express();
 app.use(express.static(__dirname + "/public"));
 
 // Sets up the Express app to handle data parsing //
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Override with POST having ?_method=DELETE //
-app.use(methodOverride("_method"));
+// Parse application/json //
+app.use(bodyParser.json());
 
 // ================================================================================
 // HANDLEBARS
