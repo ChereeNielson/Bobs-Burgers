@@ -5,13 +5,13 @@ $(function() {
     $(".create-form").on("submit", function(event) {
         event.preventDefault();
 
-        var newBurger = {
+        let newBurger = {
             burger_name: $("#newburger").val().trim(),
             devoured: 0
         };
 
         // Send the POST Request //
-        $.ajax("/api/burgers", {
+        $.ajax("/burgers", {
             type: "POST",
             data: newBurger
         }).then(function() {
@@ -24,13 +24,13 @@ $(function() {
     $(".eatburger").on("click", function(event) {
         event.preventDefault();
 
-        var id = $(this).data("id");
-        var devouredState = {
+        let id = $(this).data("id");
+        let devouredState = {
             devoured: 1
         };
 
         // Send the PUT Request //
-        $.ajax("/api/burgers/" + id, {
+        $.ajax("/burgers/" + id, {
             type: "PUT",
             data: devouredState
         }).then(function() {
@@ -42,12 +42,12 @@ $(function() {
     $(".trashburger").on("click", function(event) {
         event.preventDefault();
 
-        var id = $(this).data("id");
+        let id = $(this).data("id");
 
         // Send the DELETE Request //
         $.ajax({
             type: "DELETE",
-            url: "/api/burgers/" + id
+            url: "/burgers/" + id
         }).then(location.reload());
     });
 
