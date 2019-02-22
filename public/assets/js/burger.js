@@ -1,5 +1,5 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded //
-$(function() {
+$(function () {
 
     // Add a New Burger //
     $(".create-form").on("submit", function(event) {
@@ -14,7 +14,7 @@ $(function() {
         $.ajax("/burgers", {
             type: "POST",
             data: newBurger
-        }).then(function() {
+        }).then(function () {
             console.log("Added new burger");
             // Reload the Page to Get the Updated Burger List //
             location.reload();
@@ -33,7 +33,7 @@ $(function() {
         $.ajax("/burgers/" + id, {
             type: "PUT",
             data: devouredState
-        }).then(function() {
+        }).then(function () {
             console.log("Burger devoured");
             location.reload();
         });

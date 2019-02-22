@@ -4,8 +4,8 @@ let orm = require("../config/orm.js");
 let burger = {
     // Display All Burgers in the DB //
     selectAll: function(cb) {
-        orm.selectAll("burgers", function(response) {
-            cb(response);
+        orm.selectAll("burgers", function(res) {
+            cb(res);
         });
     },
     // Change the Devoured State to True //
