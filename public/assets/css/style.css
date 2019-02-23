@@ -14,10 +14,25 @@
     /* font-family: 'Notable', sans-serif; */
     color: black;
     text-align: center;
+    margin-top: 20px;
+}
+
+p#color-override {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2#color-override {
+    font-size: 3em;
+}
+
+label#color-override {
+    font-size: 1.5em;
 }
 
 #newburger {
     border-radius: 5px;
+    height: 34px;
 }
 
 #color-override {
@@ -25,7 +40,7 @@
 }
 
 #lefthead {
-    background-color: #1E90FF;
+    background-color: #007bff;
     color: white;
     text-align: center;
     font-size: 2em;
