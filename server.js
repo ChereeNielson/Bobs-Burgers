@@ -3,8 +3,6 @@
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
 let express = require("express");
-let bodyParser = require("body-parser");
-// let methodOverride = require("method-override");
 
 // ================================================================================
 // EXPRESS CONFIGURATION
@@ -16,10 +14,10 @@ let app = express();
 app.use(express.static(__dirname + "/public"));
 
 // Sets up the Express app to handle data parsing //
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 // Parse application/json //
-app.use(bodyParser.json());
+app.use(express.json());
 
 // ================================================================================
 // HANDLEBARS
