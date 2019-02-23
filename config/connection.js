@@ -1,3 +1,4 @@
+require("dotenv").config();
 
 const secret = require("../secret.js");
 
@@ -7,7 +8,6 @@ let mysql = require("mysql");
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-    require("dotenv").config();
     connection = mysql.createConnection({
         host: "localhost",
         user: "root",
